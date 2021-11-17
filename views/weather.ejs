@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="container">
+        <img src="https://raw.githubusercontent.com/bugsounet/MMM-Weather/master/logo.png" width="50%">
+
+        <p>View the current weather for your city</p>
+        <form action="/" method="get">
+            <input type="text" name="city" placeholder="City ✏️" value="">
+            <button>Get Weather</button>
+        </form>
+        <div class="wrap">
+            <div class="city"><%=city%></div>
+            <div class="des">
+                <% if(icon !== null)  {%>
+                <img class="icon" src="http://openweathermap.org/img/w/<%= icon %>.png" alt="" width="30%">
+                <p><%=des%></p>
+            </div>
+            <p class="alert"><%=error%></p>
+            <% } %>
+            <div class="temp">🌡️ <%=temp%>℃</div>
+        </div>
+    </div>
+</body>
+
+</html>

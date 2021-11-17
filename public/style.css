@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+body{
+    background-color: hsl(203, 39%, 44%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+   
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(182, 43%, 76%);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px #000;
+}
+form{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+input{
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #000;
+    background-color: hsl(182, 43%, 76%);
+    color: hsl(203, 39%, 44%);
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+button{
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: hsl(203, 39%, 44%);
+    color: hsl(182, 43%, 76%);
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 3px;
+}
+button:hover{
+    background-color: hsl(12, 76%, 61%);
+    color: black;
+}
+.wrap{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    margin-top:20px;
+}
+.city{
+    font-size: 40px;
+}
+.des{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 20px;
+}
+.temp{
+    font-size: 30px;
+}
+.alert{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 20px;
+    color: red;
+}
+@media screen and (max-width: 560px){
+    .container{
+        width: 100%;
+        height: 100vh;
+        padding: 10px;
+        justify-content: space-evenly;
+    }
+}
+    
